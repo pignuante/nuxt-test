@@ -65,6 +65,13 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          autoprefixer: {grid: true}
+        }
+      }
+    },
     /*
     ** You can extend webpack config here
     */
